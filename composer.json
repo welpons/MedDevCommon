@@ -1,0 +1,14 @@
+{
+    "name": "welpons/meddevcommon",
+    "description": "A common library for all medical device microservices",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Felix Pons",
+            "email": "welpons@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3"
+    },
+}
