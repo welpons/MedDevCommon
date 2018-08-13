@@ -4,7 +4,7 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
-/nbproject/private/
+/nbproject/
 
 ###> symfony/phpunit-bridge ###
 .phpunit
