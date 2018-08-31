@@ -13,13 +13,15 @@ use JMS\Serializer\Annotation\XmlRoot;
 class Header 
 {
     /**
-     *
+     * Message Id. If it's not provided, it's generated internally
+     * 
      * @var string
      */
     protected $messageId;
     
     /**
-     *
+     * The address where the consumer has to send back the response
+     * 
      * @var string 
      */
     protected $responseTo;

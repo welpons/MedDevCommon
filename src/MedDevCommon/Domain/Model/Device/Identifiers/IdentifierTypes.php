@@ -1,11 +1,10 @@
 <?php
 
-
-
 namespace Welpons\MedDevCommon\Domain\Model\Device\Identifiers;
 
 /**
- *
+ * Identifier types
+ * 
  * @author felix
  */
 interface IdentifierTypes 

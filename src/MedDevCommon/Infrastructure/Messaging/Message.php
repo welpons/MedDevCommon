@@ -15,7 +15,8 @@ class Message implements MessageInterface
     private $header;
     
     /**
-     *
+     * The structure of the body is defined by the provider
+     * 
      * @var \stdClass 
      */
     private $body;
