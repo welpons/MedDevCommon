@@ -6,7 +6,7 @@ use Welpons\MedDevCommon\Infrastructure\Messaging\Message;
 use JMS\Serializer\Annotation\XmlRoot;
 
 /** @XmlRoot("message") */
-class Message
+class Message implements MessageInterface
 {
     /**
      *
@@ -37,19 +37,14 @@ class Message
     public function setBody(\stdClass $bodyContent)
     {
         $this->body = $bodyContent;
-    }
+    }   
     
-    public function setMessageId(string $id)
-    {
-        $this->header->setMessageId($id);
-    }        
-    
-    public function getMessageId()
+    public function getMessageId() : ?string
     {
         return $this->header->getMessageId();
     }     
     
-    function getResponseTo() : string
+    public function getResponseTo() : ?string
     {
         return $this->header->getResponseTo();
     }    

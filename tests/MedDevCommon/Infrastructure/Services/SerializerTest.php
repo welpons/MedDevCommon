@@ -33,10 +33,12 @@ class SerializerTest extends TestCase
                 }}';
         $content = json_decode($jsonBodyContent);
         $message->setBody($content);
-        $message->setMessageId(uniqid());
+ 
         
         $xmlMessage = $serializer->serialize($message, 'xml');
         $xml = new \SimpleXMLElement($xmlMessage);
         $this->assertTrue(is_object($xml));
-    }        
+    }     
+    
+    
 }

@@ -30,25 +30,15 @@ class Header
         $this->responseTo = $responseTo;
     }
     
-    public function getMessageId() : string
+    public function getMessageId() : ?string
     {
         return $this->messageId;
     }
 
-    public function setMessageId(string $messageId)
-    {
-        $this->messageId = $messageId;
-    }
     
-    function getResponseTo() : string
+    function getResponseTo() : ?string
     {
         return $this->responseTo;
     }
-
-    function setResponseTo(string $responseTo) 
-    {
-        $this->responseTo = $responseTo;
-    }
-
 
 }
